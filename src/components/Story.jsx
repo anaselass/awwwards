@@ -12,8 +12,16 @@ const Story = () => {
           <AnimatedTitle
             title={"the st<b>o</b>ry of <br /> a hidden real<b>m</b>"}
             sectionId="#story"
-            containerClass={"mt-5 pointer-events-none"}
+            containerClass={
+              "mt-5 pointer-events-none mix-blend-difference relative z-10"
+            }
           />
+
+          <div className="story-img-container">
+            <div className="story-img-mask">
+              <div className="story-img-content"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
