@@ -9,7 +9,7 @@ const Button = ({ id, title, reightIcon, leftIcon, containerClass }) => {
     >
       {leftIcon}
 
-      <span className=" relative inline-flex overflow-hidden font-general text-xs uppercase">
+      <span className=" relative inline-flex overflow-hidden font-general md:text-xs text-[11px] uppercase">
         <div>{title}</div>
       </span>
 

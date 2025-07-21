@@ -61,7 +61,7 @@ const Story = () => {
             }
           />
 
-          <div className="story-img-container">
+          <div className="story-img-container mb-20">
             <div className="story-img-mask">
               <div className="story-img-content">
                 <img

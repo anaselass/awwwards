@@ -31,7 +31,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
       {title.split("<br />").map((line, index) => (
         <div
           key={index}
-          className="flex-center max-w-full flex-wrap gap-2 px-10 md:gap-3"
+          className="flex-center text-5xl md:text-7xl leading-10 md:leading-none tracking-wide max-w-full flex-wrap gap-2 px-10 md:gap-3"
         >
           {line.split(" ").map((word, i) => (
             <span
