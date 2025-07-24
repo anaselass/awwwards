@@ -13,7 +13,7 @@ const Hero = () => {
   const [isloading, SetIsloading] = useState(true);
   const [loadedVideos, SetLoadedVideos] = useState(0);
 
-  const totalVideos = 4;
+  const totalVideos = 3;
   const nextVideoRef = useRef(null);
 
   const handleVideoLoaded = () => {
@@ -77,7 +77,7 @@ const Hero = () => {
     if (loadedVideos === totalVideos - 1) {
       SetIsloading(false);
     }
-  });
+  }, [loadedVideos, totalVideos]);
 
   const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
 
